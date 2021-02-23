@@ -5,8 +5,8 @@
     require_once 'db_connect.php';
 
     if(isset($_POST['logar'])){
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $id_setor = $_POST[''];
+       
 
         if(strlen($email) > 0 && strlen($senha) > 0){
             $sql = "SELECT * FROM tb_users WHERE email = '$email' AND senha = '$senha'";

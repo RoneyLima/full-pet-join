@@ -19,13 +19,13 @@
     
     <!-- Chamando minha função Javascript -->
 
-    <script type="text/javascript" src="./js/script.js"></script>
+    <link href="./css/estilo-produtos.css?v=2" rel="stylesheet">
+    
 
     <!-- Chamando meu estilo CSS -->
-    <link href="./css/estilo.css" rel="stylesheet">
     <title>Full Pet</title>
 </head>
-<body>
+<header>
 
     <div class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between"> 
@@ -38,7 +38,7 @@
                 </form>
                    <p class="login-options">
                    <a class="stretched-link login-options-head" href="./login.php">Login</a>           
-                    <a class="stretched-link" href="./php/actions/sair.php">Sair</a>
+                    <!-- <a class="stretched-link" href="./php/actions/sair.php">Sair</a> -->
                    </p>
                 </div>
 
@@ -49,14 +49,19 @@
                 <span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link text-white" href="./produtos.php">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./cadastro.php">Cadastrar</a></li>                     
-                        <li class="nav-item"><a class="nav-link text-white" href="./lojas.php">Lojas</a></li>
-
-                    </ul>
+                        <li class="nav-item"><a class="nav-link text-white" href="./produtos.php">Produtos</a></li>                    </ul>
                 </div>
+            </nav>        
+            
+            <nav class="navbar sticky-top">
+                
+                <ul class="pagination pagination-sm">
+                    <li class="page-item"><a method="POST" class="page-link" href="#" name="todas">Todas as categorias</a></li>
+                    <li class="page-item"><a method="POST" class="page-link" href="#" name="1">Cães</a></li>
+                    <li class="page-item"><a method="POST" class="page-link" href="#" name="2">Gatos</a></li>
+                    <li class="page-item"><a method="POST" class="page-link" href="#" name="3">Pássaros</a></li>
+                
+                </ul>
             </nav>
-    </div>
-
-
+    </div>  
 

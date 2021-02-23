@@ -2,7 +2,7 @@
 <?php 
     include_once ('./php/actions/db_connect.php');
 
-    include_once ('./php/includes/header.php')
+    include_once ('./php/includes/header-prod.php')
 ?>
 
 <div class="container-conteudo mx-auto">

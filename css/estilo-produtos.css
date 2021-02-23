@@ -1,0 +1,65 @@
+body {
+    padding-top: 220px;
+    }
+
+    .coluna-categoria{
+        flex: 20em;
+        max-width: 18%;
+        text-align: left;
+        display: block;
+        height: 100%;
+        width: 250px;
+        
+    }
+    
+    .coluna-produtos {
+        display:inline;
+        max-width: 82%;
+        width: 82%;
+        display: inline-flexbox;
+        margin-left: 2%;
+        padding: 1ex;
+    }
+    
+    .produtos-linha  {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .card {
+        align-items: center;
+    }
+    
+    .card img {
+        width: 120px;
+        
+    }
+    .card a {
+        text-decoration: none;
+        text-shadow: 2px;
+        color: dimgray;
+    }
+    
+    .card .valor-antigo {
+        text-decoration: line-through;
+        font-size: 10pt;
+    }
+    
+    .card .valor-atual {
+        font-size: 14pt;
+        font-weight: 500;
+    }
+    
+    
+    .conteudo-lojas {
+       
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+    }
+    
+    .conteudo-lojas h2 {
+        text-align: center;
+        font-size: 12pt;
+    }

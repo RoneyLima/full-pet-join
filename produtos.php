@@ -1,22 +1,12 @@
 <?php
 
-        include_once ('./php/includes/header.php')
+        include_once ('./php/includes/header-prod.php');
+    
        
 ?>
 
-<div class="container body-conteiner div-pagina-produtos">
 
-    <div class="conteiner coluna-categoria">
-        <h3></h3>
-        <ul>
-            <li onclick="exibirCategoria('dogFood')">Cães</li>
-            <li onclick="exibirCategoria('catFood')">Gatos</li>
-            <li onclick="exibirCategoria('birdFood')">Pássaros</li>
-            <li onclick="exibirCategoria('oFood')">Répteis</li>
-            <li onclick="exibirCategoria('oFood')"class="fontePadrao">Outros animais</li>
-        </ul>
-        
-    </div>
+<div class="container body-conteiner div-pagina-produtos">
 
     <div class="coluna-produtos">
         <div class="produtos-linha">
@@ -24,11 +14,18 @@
     
     require_once "./php/actions/db_connect.php";
 
-    $sql = "SELECT * FROM tb_produtos";
-    $resultado = mysqli_query($connect, $sql);
+    if(isset($_POST['1'])){
+        $id_setor = $_POST['1'];
+       
 
-    while($row=mysqli_fetch_assoc($resultado)){
-        
+        // if(strlen($id_setor) > 0){
+            $sql = "SELECT * FROM tb_produtos WHERE setor = $id_setor";
+            $buscar=mysqli_query($connect,$sql);
+            $dados=mysqli_fetch_array($buscar);   
+            $result=mysqli_num_rows($buscar);
+
+            while($row = mysqli_fetch_assoc($resultado)){
+                            
 ?>  
             <div class="card" style="width: 16rem;">
             <br>
@@ -48,6 +45,7 @@
             </div>
             <?php
         }
+    }
     ?>
     </div>
 
@@ -56,7 +54,3 @@
  include_once ('./php/includes/footer.php')
 
 ?>
-
-
-    
-    

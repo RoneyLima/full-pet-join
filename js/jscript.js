@@ -2,7 +2,7 @@
 let destaqueImg = (imagem) => imagem.width = 250px.
 
 let semDestaque = (imagem) => imagem.width = 120px;
-/*
+
 function    exibirCategoria(categoria){
     let elementos = document.getElementsByClassName('box-produto');
 
@@ -14,4 +14,3 @@ function    exibirCategoria(categoria){
         }
     }
 }
-*/
