@@ -14,17 +14,17 @@
     
     require_once "./php/actions/db_connect.php";
 
-    if(isset($_POST['1'])){
-        $id_setor = $_POST['1'];
-       
+    $id_setor = isset($_GET['setor']) ? intval($_GET['setor']) : 0;
 
-        // if(strlen($id_setor) > 0){
-            $sql = "SELECT * FROM tb_produtos WHERE setor = $id_setor";
-            $buscar=mysqli_query($connect,$sql);
-            $dados=mysqli_fetch_array($buscar);   
-            $result=mysqli_num_rows($buscar);
+    if ($id_setor > 0) {
+        $sql = "SELECT * FROM tb_produtos WHERE setor = $id_setor";
+    } else {
+        $sql = "SELECT * FROM tb_produtos";
+    }
+    $buscar = mysqli_query($connect, $sql);
 
-            while($row = mysqli_fetch_assoc($resultado)){
+    if ($buscar && mysqli_num_rows($buscar) > 0) {
+        while($row = mysqli_fetch_assoc($buscar)){
                             
 ?>  
             <div class="card" style="width: 16rem;">

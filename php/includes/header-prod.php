@@ -56,10 +56,10 @@
             <nav class="navbar sticky-top">
                 
                 <ul class="pagination pagination-sm">
-                    <li class="page-item"><a method="POST" class="page-link" href="#" name="todas">Todas as categorias</a></li>
-                    <li class="page-item"><a method="POST" class="page-link" href="#" name="1">Cães</a></li>
-                    <li class="page-item"><a method="POST" class="page-link" href="#" name="2">Gatos</a></li>
-                    <li class="page-item"><a method="POST" class="page-link" href="#" name="3">Pássaros</a></li>
+                    <li class="page-item"><a class="page-link" href="produtos.php">Todas as categorias</a></li>
+                    <li class="page-item"><a class="page-link" href="produtos.php?setor=1">Cães</a></li>
+                    <li class="page-item"><a class="page-link" href="produtos.php?setor=2">Gatos</a></li>
+                    <li class="page-item"><a class="page-link" href="produtos.php?setor=3">Pássaros</a></li>
                 
                 </ul>
             </nav>

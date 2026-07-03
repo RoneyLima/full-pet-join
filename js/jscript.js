@@ -1,5 +1,5 @@
 
-let destaqueImg = (imagem) => imagem.width = 250px.
+let destaqueImg = (imagem) => imagem.width = 250px;
 
 let semDestaque = (imagem) => imagem.width = 120px;
 
